@@ -1,0 +1,20 @@
+(kicad_sch
+  (version 20231120)
+  (generator "codedeck")
+  (uuid 8f1c0b3e-6a21-4d0d-9c4a-7b2e1a90d111)
+  (paper "A4")
+  (title_block
+    (title "CodeDeck 12-key ESP32-S3 keypad")
+    (rev "1.0")
+    (company "CodeDeck")
+    (comment 1 "2-pin switches, direct GPIO, USB-C, serial OTA")
+  )
+  (lib_symbols)
+  (text "See hardware/netlist.csv and hardware/pcb-top.svg for the authoritative interconnect."
+    (at 140 40 0)
+    (effects (font (size 2 2)))
+  )
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

@@ -1,0 +1,21 @@
+{
+  "name": "@codedeck/protocol",
+  "version": "1.0.0",
+  "description": "Shared CodeDeck serial protocol, profiles, and VS Code command catalog",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "tsc",
+    "build": "tsc",
+    "test": "tsc && node --test dist/parse.test.js dist/profile.test.js dist/update.test.js dist/ota-client.test.js",
+    "lint": "tsc --noEmit"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "typescript": "^5.7.2"
+  }
+}

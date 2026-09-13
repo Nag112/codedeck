@@ -1,0 +1,18 @@
+Net,ESP32-S3 pin,Switch,Direction
+GND,GND,SW1–SW12 pin B,Power
+KEY0,GPIO4,SW1 pin A,Input pull-up
+KEY1,GPIO5,SW2 pin A,Input pull-up
+KEY2,GPIO6,SW3 pin A,Input pull-up
+KEY3,GPIO7,SW4 pin A,Input pull-up
+KEY4,GPIO8,SW5 pin A,Input pull-up
+KEY5,GPIO9,SW6 pin A,Input pull-up
+KEY6,GPIO10,SW7 pin A,Input pull-up
+KEY7,GPIO11,SW8 pin A,Input pull-up
+KEY8,GPIO12,SW9 pin A,Input pull-up
+KEY9,GPIO13,SW10 pin A,Input pull-up
+KEY10,GPIO14,SW11 pin A,Input pull-up
+KEY11,GPIO21,SW12 pin A,Input pull-up
+USB_D-,GPIO19/USB_D-,J1 D-,USB
+USB_D+,GPIO20/USB_D+,J1 D+,USB
+VBUS,5V in,J1 VBUS,Power
+3V3,3V3,Module,Power

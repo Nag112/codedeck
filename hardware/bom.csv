@@ -1,0 +1,12 @@
+Designator,Qty,Value,Footprint,Notes
+U1,1,ESP32-S3-WROOM-1,Module,"USB CDC + OTA partitions (default.csv)"
+J1,1,USB-C 16P,USB-C-16P,"VBUS 5V, D+/D- to ESP32-S3 USB, CC1/CC2 5.1k to GND"
+SW1-SW12,12,2-pin keyboard switch,MX or Kailh Choc,"One pin GPIO, other pin GND. No matrix."
+R1,R2,2,5.1k 1% 0603,USB-C CC pulldowns
+C1,C2,2,100nF 16V 0603,3V3 decoupling at module
+C3,1,10uF 16V 0805,Bulk 3V3
+C4,1,10uF 16V 0805,Bulk 5V VBUS
+U2,1,AMS1117-3.3 or AP2112K-3.3,SOT-223 / SOT-23-5,"If module does not regulate from 5V"
+D1,1,LED 0805,Status,"Optional, GPIO 48 / WS2812 not required"
+EN,1,10k pull-up,0603,Module EN to 3V3
+BOOT,1,10k pull-up,0603,GPIO0 / boot — leave high for app OTA

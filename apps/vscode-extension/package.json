@@ -1,0 +1,50 @@
+{
+  "name": "codedeck",
+  "displayName": "CodeDeck",
+  "description": "Execute VS Code commands from a CodeDeck ESP32 keypad via the macOS companion.",
+  "version": "1.0.0",
+  "publisher": "codedeck",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": ["Keymaps", "Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "CodeDeck",
+      "properties": {
+        "codedeck.port": {
+          "type": "number",
+          "default": 17322,
+          "description": "Local HTTP port for the companion bridge."
+        },
+        "codedeck.token": {
+          "type": "string",
+          "default": "",
+          "description": "Shared bearer token. Leave empty to use ~/.codedeck/token."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "codedeck.showStatus",
+        "title": "CodeDeck: Show Bridge Status"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test dist/server.test.js dist/token.test.js",
+    "lint": "tsc --noEmit",
+    "vscode:prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@codedeck/protocol": "1.0.0"
+  }
+}

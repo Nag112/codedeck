@@ -1,0 +1,21 @@
+{
+  "name": "codedeck-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Open-source 12-key ESP32 Stream Deck for Visual Studio Code",
+  "workspaces": [
+    "packages/protocol",
+    "apps/companion",
+    "apps/vscode-extension"
+  ],
+  "scripts": {
+    "test": "npm test --workspaces --if-present && npm run test:firmware",
+    "test:firmware": "bash firmware/test/run.sh",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

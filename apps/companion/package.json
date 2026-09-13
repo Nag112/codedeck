@@ -1,0 +1,22 @@
+{
+  "name": "@codedeck/companion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "macOS companion for CodeDeck — map keys and update ESP32 firmware",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && electron .",
+    "test": "tsc && node --test dist/store.test.js dist/executor.test.js",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@codedeck/protocol": "1.0.0",
+    "serialport": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "electron": "^33.2.0",
+    "typescript": "^5.7.2"
+  }
+}
